@@ -36,7 +36,7 @@
         }
         return size;
     } else { // 文件
-        return [mgr attributesOfItemAtPath:self error:nil].fileSize;
+        return (NSInteger)[mgr attributesOfItemAtPath:self error:nil].fileSize;
     }
 }
 
